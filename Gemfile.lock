@@ -1,3 +1,21 @@
+GIT
+  remote: git://github.com/codebrew/backbone-rails.git
+  revision: 2d98d7157767dc04b00cac3f822f9576283ba921
+  specs:
+    rails-backbone (1.1.2)
+      coffee-script
+      ejs
+      jquery-rails
+      railties
+
+GIT
+  remote: git://github.com/ctran/annotate_models.git
+  revision: 038b13c04e575cc0f0c89c702c994166c7dc9955
+  specs:
+    annotate (2.6.5)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -72,6 +90,7 @@ GEM
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
+    ejs (1.1.1)
     erubis (2.7.0)
     execjs (2.2.2)
     foreman (0.75.0)
@@ -108,6 +127,7 @@ GEM
     nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
+    pg (0.17.1)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
     pry (0.10.1)
@@ -226,6 +246,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate!
   better_errors
   binding_of_caller
   bootstrap-sass
@@ -236,12 +257,14 @@ DEPENDENCIES
   high_voltage
   jbuilder (~> 2.0)
   jquery-rails (~> 4.0.0.beta2)
+  pg
   pry-rails
   pry-rescue
   puma
   pundit
   quiet_assets
   rails (= 4.2.0.beta4)
+  rails-backbone!
   rails_layout
   sass-rails (~> 5.0.0.beta1)
   sdoc (~> 0.4.0)

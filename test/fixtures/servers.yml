@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hostname: MyString
+  username: MyString
+  private_key: MyString
+  public_key: MyString
+
+two:
+  hostname: MyString
+  username: MyString
+  private_key: MyString
+  public_key: MyString

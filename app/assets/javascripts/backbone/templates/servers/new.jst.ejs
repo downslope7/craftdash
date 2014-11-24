@@ -1,0 +1,30 @@
+<h1>New server</h1>
+
+<form id="new-server" name="server">
+  <div class="field">
+    <label for="hostname"> hostname:</label>
+    <input type="text" name="hostname" id="hostname" value="<%= hostname %>" >
+  </div>
+
+  <div class="field">
+    <label for="username"> username:</label>
+    <input type="text" name="username" id="username" value="<%= username %>" >
+  </div>
+
+  <div class="field">
+    <label for="private_key"> private_key:</label>
+    <input type="text" name="private_key" id="private_key" value="<%= private_key %>" >
+  </div>
+
+  <div class="field">
+    <label for="public_key"> public_key:</label>
+    <input type="text" name="public_key" id="public_key" value="<%= public_key %>" >
+  </div>
+
+  <div class="actions">
+    <input type="submit" value="Create Server" />
+  </div>
+
+</form>
+
+<a href="#/index">Back</a>

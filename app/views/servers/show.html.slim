@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Hostname:
+  = @server.hostname
+p
+  strong Username:
+  = @server.username
+p
+  strong Private key:
+  = @server.private_key
+p
+  strong Public key:
+  = @server.public_key
+
+= link_to 'Edit', edit_server_path(@server)
+'|
+= link_to 'Back', servers_path

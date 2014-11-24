@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124203221) do
+ActiveRecord::Schema.define(version: 20141124192156) do
+
+  create_table "servers", force: true do |t|
+    t.string   "hostname"
+    t.string   "username"
+    t.string   "public_key"
+    t.string   "private_key"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
