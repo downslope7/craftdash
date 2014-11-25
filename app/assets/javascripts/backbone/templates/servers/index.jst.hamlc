@@ -1,0 +1,15 @@
+%h1 Listing servers
+
+%table#servers-table.table
+  %tr
+    %th Hostname
+    %th Username
+    %th Private key
+    %th Public key
+    %th
+    %th
+    %th
+
+%br
+
+%a{href: "#/new"} New Server

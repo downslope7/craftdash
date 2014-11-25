@@ -1,7 +1,7 @@
 class ServersController < ApplicationController
   before_action :set_server, only: [:show, :edit, :update, :destroy]
 
-  respond_to :html
+  respond_to :html, :json
 
   def index
     @servers = Server.all

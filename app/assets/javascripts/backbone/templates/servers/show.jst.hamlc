@@ -1,0 +1,17 @@
+%p
+  %b Hostname:
+  = @hostname
+
+%p
+  %b Username:
+  = @username
+
+%p
+  %b Private key:
+  = @private_key
+
+%p
+  %b Public key:
+  = @public_key
+
+%a{href: "#/index"} Back

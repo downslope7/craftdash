@@ -1,14 +1,15 @@
 doctype html
 html
-  head
+  head[lang="en"]
+    meta[charset="utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
     title
       = content_for?(:title) ? yield(:title) : 'Craftdash'
-    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Craftdash'}"
-    == stylesheet_link_tag "application", :media => 'all', 'data-turbolinks-track' => true
-    == javascript_include_tag 'application', 'data-turbolinks-track' => true
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'CraftDash'}"
+    == stylesheet_link_tag "application", :media => 'all'
+    == javascript_include_tag 'application'
     == csrf_meta_tags
-  body
+  body[role="document"]
     header
       == render 'layouts/navigation'
     main[role="main"]
