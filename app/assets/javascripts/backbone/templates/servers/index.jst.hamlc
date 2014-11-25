@@ -1,5 +1,4 @@
 %h1 Listing servers
-
 %table#servers-table.table
   %tr
     %th Hostname

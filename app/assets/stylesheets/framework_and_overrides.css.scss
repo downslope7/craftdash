@@ -51,19 +51,27 @@ section {
   max-width: 320px;
   margin: 0 auto;
 }
-.authform form {
+.server-form, .server-panel {
+  padding-top: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.authform form, .server-form form, .server-panel-content {
   @extend .well;
   @extend .well-lg;
   padding-bottom: 40px;
 }
-.authform .right {
+.server-form-header {
+  @extend .h3;
+}
+.authform .right, .server-form .right {
   float: right !important;
 }
-.authform .button {
+.authform .button, .server-form .button {
   @extend .btn;
   @extend .btn-primary;
 }
-.authform fieldset {
+.authform fieldset, .server-form fieldset {
   @extend .well;
 }
 #error_explanation {

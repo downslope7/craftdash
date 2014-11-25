@@ -1,23 +1,23 @@
-%h1 Edit server!
+.server-form
+  %form#edit-server{name: 'server'}
+    %h1.server-form-header Edit Server
+    .form-group
+      %label{for: "hostname"} hostname:
+      %input#hostname.form-control{type: 'text', name: 'hostname', value: "#{@hostname}", autofocus: 'autofocus'}
 
-%form#edit-server{name: 'server'}
-  .field
-    %label{for: "hostname"} hostname:
-    %input#hostname{type: 'text', name: 'hostname', value: "#{@hostname}"}
+    .form-group
+      %label{for: "username"} username:
+      %input#username.form-control{type: 'text', name: 'username', value: "#{@username}"}
 
-  .field
-    %label{for: "username"} username:
-    %input#username{type: 'text', name: 'username', value: "#{@username}"}
-
-  .field
-    %label{for: "private_key"} private_key:
-    %input#private_key{type: 'text', name: 'private_key', value: "#{@private_key}"}
+    .form-group
+      %label{for: "private_key"} private_key:
+      %input#private_key.form-control{type: 'text', name: 'private_key', value: "#{@private_key}"}
     
-  .field
-    %label{for: "public_key"} public_key:
-    %input#public_key{type: 'text', name: 'public_key', value: "#{@public_key}"}
+    .form-group
+      %label{for: "public_key"} public_key:
+      %input#public_key.form-control{type: 'text', name: 'public_key', value: "#{@public_key}"}
 
-  .actions
-    %input{type: 'submit', value: 'Update Server'}
+    .actions
+      %input.button.right{type: 'submit', value: 'Update Server'}
     
-%a{href: "#/index"} Back
+  %a{href: "#/index"} Back

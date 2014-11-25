@@ -1,6 +1,4 @@
-%p
-  %b Hostname:
-  = @hostname
+%h1= @hostname
 
 %p
   %b Username:
